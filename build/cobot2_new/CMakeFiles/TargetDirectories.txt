@@ -1,0 +1,9 @@
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/uninstall.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/cobot2_new_uninstall.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/test.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/edit_cache.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/rebuild_cache.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/list_install_components.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/install.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/install/local.dir
+/home/lenovo/ultramotive_ws/build/cobot2_new/CMakeFiles/install/strip.dir

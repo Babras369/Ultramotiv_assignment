@@ -1,0 +1,1 @@
+/home/lenovo/ultramotive_ws/build/cobot_trial2_description/ament_cmake_environment_hooks/local_setup.sh

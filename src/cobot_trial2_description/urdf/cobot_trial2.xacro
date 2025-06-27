@@ -1,0 +1,372 @@
+<?xml version="1.0" ?>
+<robot name="cobot_trial2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find cobot_trial2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find cobot_trial2_description)/urdf/cobot_trial2.trans" />
+<xacro:include filename="$(find cobot_trial2_description)/urdf/cobot_trial2.gazebo" />
+<xacro:include filename="$(find cobot_trial2_description)/urdf/camera.xacro" />
+<xacro:include filename="$(find cobot2_new)/config/cobot_trial2.ros2_control.xacro"/>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0004794739708018026 -0.0002682940048133126 0.0024216914709679015" rpy="0 0 0"/>
+    <mass value="14.129657044938508"/>
+    <inertia ixx="0.036874" iyy="0.037256" izz="0.051216" ixy="6.1e-05" iyz="5.5e-05" ixz="-0.00018"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_motor_v1_1">
+  <inertial>
+    <origin xyz="0.024899715980362478 1.5580695867734029e-06 -0.027377695231683125" rpy="0 0 0"/>
+    <mass value="1.0930932247025902"/>
+    <inertia ixx="0.000866" iyy="0.000852" izz="0.00045" ixy="0.0" iyz="-0.0" ixz="2.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.027 -0.0 -0.066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/base_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.027 -0.0 -0.066" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/base_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_v1_1">
+  <inertial>
+    <origin xyz="-0.0016893772760385151 -0.0011832639990666093 0.05833402903473016" rpy="0 0 0"/>
+    <mass value="12.961267403331062"/>
+    <inertia ixx="0.039457" iyy="0.039581" izz="0.027311" ixy="-0.000171" iyz="0.000266" ixz="0.00038"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.0866" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link1_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.0866" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link1_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_motor_v1_1">
+  <inertial>
+    <origin xyz="-0.04127130010581306 -0.02986534612180438 0.024893508337427858" rpy="0 0 0"/>
+    <mass value="1.0898719762623763"/>
+    <inertia ixx="0.000579" iyy="0.000714" izz="0.000859" ixy="-0.000185" iyz="-1.3e-05" ixz="-1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.009097 -0.00733 -0.1211" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link1_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.009097 -0.00733 -0.1211" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link1_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_motor_v1_1">
+  <inertial>
+    <origin xyz="0.02807812700252782 0.0314221306481786 0.02261117634714188" rpy="0 0 0"/>
+    <mass value="1.0898637645140388"/>
+    <inertia ixx="0.000572" iyy="0.000725" izz="0.000856" ixy="-0.000183" iyz="1.6e-05" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.184891 -0.028047 -0.426582" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link2_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.184891 -0.028047 -0.426582" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link2_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_motor_v1_1">
+  <inertial>
+    <origin xyz="-0.044704661060319534 -0.021812786695896008 0.02365361795742238" rpy="0 0 0"/>
+    <mass value="1.0758155712082471"/>
+    <inertia ixx="0.000592" iyy="0.000752" izz="0.000924" ixy="-0.000236" iyz="-1e-05" ixz="-1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.135254 -0.200159 -0.72172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link3_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.135254 -0.200159 -0.72172" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link3_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_motor_v1_1">
+  <inertial>
+    <origin xyz="-0.046630601076623396 0.021895305022229666 -0.008328708656389683" rpy="0 0 0"/>
+    <mass value="1.0660193598921515"/>
+    <inertia ixx="0.000722" iyy="0.000553" izz="0.000819" ixy="0.000181" iyz="6.1e-05" ixz="-3.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.214552 -0.136988 -0.749772" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link4_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.214552 -0.136988 -0.749772" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link4_motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_v1_1">
+  <inertial>
+    <origin xyz="-0.01500149565335046 0.0211205666258919 -0.00451062534429425" rpy="0 0 0"/>
+    <mass value="5.998944180809606"/>
+    <inertia ixx="0.00874" iyy="0.009464" izz="0.007468" ixy="-0.000156" iyz="0.000424" ixz="0.00135"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.289788 -0.196708 -0.732787" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link5_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.289788 -0.196708 -0.732787" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link5_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_v1_1">
+  <inertial>
+    <origin xyz="-0.0173562168328808 -0.02118345390543616 0.0013881928963557222" rpy="0 0 0"/>
+    <mass value="4.349754355785353"/>
+    <inertia ixx="0.006706" iyy="0.006348" izz="0.007469" ixy="0.000675" iyz="0.000252" ixz="-0.000189"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.22092 -0.150159 -0.746968" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.22092 -0.150159 -0.746968" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_v1_1">
+  <inertial>
+    <origin xyz="-0.007419574720521099 0.059264459302387135 0.14121606688933208" rpy="0 0 0"/>
+    <mass value="17.28150836164706"/>
+    <inertia ixx="0.270766" iyy="0.250006" izz="0.05172" ixy="0.012079" iyz="-0.077614" ixz="0.035983"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.118399 -0.087455 -0.451106" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link3_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.118399 -0.087455 -0.451106" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link3_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_v1_1">
+  <inertial>
+    <origin xyz="-0.0890244100380352 0.01933927378230619 0.14561445303188614" rpy="0 0 0"/>
+    <mass value="40.55404925185744"/>
+    <inertia ixx="0.813187" iyy="0.781889" izz="0.233649" ixy="0.05465" iyz="-0.238625" ixz="0.178695"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.071094 0.049799 -0.1481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.071094 0.049799 -0.1481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find cobot_trial2_description)/meshes/link2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_motor_joint1" type="fixed">
+  <origin xyz="-0.027 0.0 0.066" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_motor_v1_1"/>
+</joint>
+
+<joint name="base_revolve" type="continuous">
+  <origin xyz="0.027 0.0 0.0206" rpy="0 0 0"/>
+  <parent link="base_motor_v1_1"/>
+  <child link="link1_v1_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+  <limit effort="87" lower="-2.9671" upper="2.9671" velocity="2.3925" />
+</joint>
+
+<joint name="link1_motor_joint" type="fixed">
+  <origin xyz="0.009097 0.00733 0.0345" rpy="0 0 0"/>
+  <parent link="link1_v1_1"/>
+  <child link="link1_motor_v1_1"/>
+</joint>
+
+<joint name="link2_motor_joint" type="fixed">
+  <origin xyz="-0.113797 0.077846 0.278482" rpy="0 0 0"/>
+  <parent link="link2_v1_1"/>
+  <child link="link2_motor_v1_1"/>
+</joint>
+
+<joint name="link3_motor_joint" type="fixed">
+  <origin xyz="-0.016855 0.112704 0.270614" rpy="0 0 0"/>
+  <parent link="link3_v1_1"/>
+  <child link="link3_motor_v1_1"/>
+</joint>
+
+<joint name="link4_motor_joint" type="fixed">
+  <origin xyz="0.006368 -0.013171 0.002804" rpy="0 0 0"/>
+  <parent link="link4_v1_1"/>
+  <child link="link4_motor_v1_1"/>
+</joint>
+
+<joint name="link4_revolve" type="continuous">
+  <origin xyz="-0.075236 0.05972 -0.016985" rpy="0 0 0"/>
+  <parent link="link4_motor_v1_1"/>
+  <child link="link5_v1_1"/>
+  <axis xyz="-0.564385 0.805718 -0.179688"/>
+  <limit effort="87" lower="-1.8326" upper="1.8326" velocity="2.3925" />
+</joint>
+
+<joint name="link3_revolve" type="continuous">
+  <origin xyz="-0.085666 -0.05 0.025248" rpy="0 0 0"/>
+  <parent link="link3_motor_v1_1"/>
+  <child link="link4_v1_1"/>
+  <axis xyz="0.81905 0.573723 -0.0"/>
+  <limit effort="87" lower="-2.9671" upper="2.9671" velocity="2.3925" />
+</joint>
+
+<joint name="link2_revolve" type="continuous">
+  <origin xyz="0.066492 0.059408 0.024524" rpy="0 0 0"/>
+  <parent link="link2_motor_v1_1"/>
+  <child link="link3_v1_1"/>
+  <axis xyz="0.81905 0.573723 -0.0"/>
+  <limit effort="87" lower="-3.1416" upper="0.0873" velocity="2.3925" />
+</joint>
+
+<joint name="link1_revolve" type="continuous">
+  <origin xyz="-0.080191 -0.057129 0.027" rpy="0 0 0"/>
+  <parent link="link1_motor_v1_1"/>
+  <child link="link2_v1_1"/>
+  <axis xyz="-0.81905 -0.573723 -0.0"/>
+  <limit effort="12" lower="-2.9671" upper="2.9671" velocity="2.8710" />
+</joint>
+
+    <!-- ROS 2 Control Interface -->
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <!-- ✅ Use the Gazebo plugin for simulation -->
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <!-- Joints to be controlled -->
+  <joint name="base_revolve">
+    <command_interface name="position"/>
+    <command_interface name="velocity"/>
+    <state_interface name="position">
+      <param name="initial_value">0.1</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="link1_revolve">
+    <command_interface name="position"/>
+    <command_interface name="velocity"/>
+    <state_interface name="position">
+      <param name="initial_value">0.1</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="link2_revolve">
+    <command_interface name="position"/>
+    <command_interface name="velocity"/>
+    <state_interface name="position">
+      <param name="initial_value">0.1</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="link3_revolve">
+    <command_interface name="position"/>
+    <command_interface name="velocity"/>
+    <state_interface name="position">
+      <param name="initial_value">0.1</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="link4_revolve">
+    <command_interface name="position"/>
+    <command_interface name="velocity"/>
+    <state_interface name="position">
+      <param name="initial_value">0.1</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
+
+  <!-- ✅ Gazebo plugin for forwarding control from Gazebo to ROS 2 -->
+<gazebo>
+  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+    <parameters>$(find cobot_trial2_description)/config/ros2_controllers.yaml</parameters>
+  </plugin>
+</gazebo>
+
+</robot>

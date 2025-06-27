@@ -1,0 +1,1 @@
+/home/lenovo/ultramotive_ws/build/cobot_trial2_description/ament_cmake_core/cobot_trial2_descriptionConfig-version.cmake

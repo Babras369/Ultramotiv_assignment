@@ -1,0 +1,81 @@
+[0.018s] Invoking command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lenovo/ultramotive_ws/src/cobot_trial2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lenovo/ultramotive_ws/install/cobot_trial2_description
+[0.037s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.247s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.272s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.325s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.329s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.338s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.419s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.421s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.605s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.676s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.825s] -- Configuring done
+[0.847s] -- Generating done
+[0.856s] -- Build files have been written to: /home/lenovo/ultramotive_ws/build/cobot_trial2_description
+[0.871s] Invoked command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lenovo/ultramotive_ws/src/cobot_trial2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lenovo/ultramotive_ws/install/cobot_trial2_description
+[0.875s] Invoking command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lenovo/ultramotive_ws/build/cobot_trial2_description -- -j12 -l12
+[0.956s] [35m[1mConsolidate compiler generated dependencies of target fk_node[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target ik_node[0m
+[0.995s] [ 50%] [32m[1mLinking CXX executable ik_node[0m
+[0.996s] [ 50%] [32m[1mLinking CXX executable fk_node[0m
+[1.527s] [ 75%] Built target fk_node
+[2.519s] [100%] Built target ik_node
+[2.545s] Invoked command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lenovo/ultramotive_ws/build/cobot_trial2_description -- -j12 -l12
+[2.562s] Invoking command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lenovo/ultramotive_ws/build/cobot_trial2_description
+[2.579s] -- Install configuration: ""
+[2.580s] -- Execute custom install script
+[2.580s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/fk_node
+[2.601s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/ik_node
+[2.618s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/display.launch.py
+[2.632s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo.launch.py
+[2.647s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo_simulation.launch.py
+[2.661s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/launch_all.launch.py
+[2.675s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_gazebo_simulation.launch.py
+[2.690s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_rviz.launch.py
+[2.704s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/camera.xacro
+[2.720s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.gazebo
+[2.734s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.srdf
+[2.750s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.trans
+[2.769s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.urdf
+[2.784s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.xacro
+[2.799s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/materials.xacro
+[2.814s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/base_link.stl
+[2.828s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/base_motor_v1_1.stl
+[2.843s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link1_motor_v1_1.stl
+[2.866s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link1_v1_1.stl
+[2.881s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link2_motor_v1_1.stl
+[2.897s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link2_v1_1.stl
+[2.912s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link3_motor_v1_1.stl
+[2.929s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link3_v1_1.stl
+[2.947s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link4_motor_v1_1.stl
+[2.965s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link4_v1_1.stl
+[2.981s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link5_v1_1.stl
+[2.997s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/display.rviz
+[3.012s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/initial_positions.yaml
+[3.027s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/joint_limits.yaml
+[3.044s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/kinematics.yaml
+[3.059s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/moveit.rviz
+[3.079s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/moveit_controllers.yaml
+[3.094s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/ompl_planning.yaml
+[3.109s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/pilz_cartesian_limits.yaml
+[3.124s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/planning_pipeline_config.yaml
+[3.138s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/ros2_controllers.yaml
+[3.153s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/sensors_3d.yaml
+[3.168s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/package_run_dependencies/cobot_trial2_description
+[3.183s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/parent_prefix_path/cobot_trial2_description
+[3.198s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/ament_prefix_path.sh
+[3.213s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/ament_prefix_path.dsv
+[3.228s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/path.sh
+[3.243s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/path.dsv
+[3.258s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.bash
+[3.273s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.sh
+[3.287s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.zsh
+[3.302s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.dsv
+[3.316s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/package.dsv
+[3.336s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/packages/cobot_trial2_description
+[3.355s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/cmake/cobot_trial2_descriptionConfig.cmake
+[3.371s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/cmake/cobot_trial2_descriptionConfig-version.cmake
+[3.385s] -- Symlinking: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/package.xml
+[3.405s] Invoked command in '/home/lenovo/ultramotive_ws/build/cobot_trial2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lenovo/ultramotive_ws/build/cobot_trial2_description

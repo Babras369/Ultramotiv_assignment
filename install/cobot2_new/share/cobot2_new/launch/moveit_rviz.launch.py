@@ -1,0 +1,1 @@
+/home/lenovo/ultramotive_ws/src/cobot2_new/launch/moveit_rviz.launch.py

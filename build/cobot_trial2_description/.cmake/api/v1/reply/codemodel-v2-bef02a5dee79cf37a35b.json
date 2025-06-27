@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c6d4a34125405f93585a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cobot_trial2_description",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cobot_trial2_description_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cobot_trial2_description_uninstall-8362f8ccab466be197d2.json",
+					"name" : "cobot_trial2_description_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fk_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fk_node-d8d46e5525a9e6444797.json",
+					"name" : "fk_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ik_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ik_node-79d0ac5c5e1db645b06e.json",
+					"name" : "ik_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8b89a24bf08252c5f059.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lenovo/ultramotive_ws/build/cobot_trial2_description",
+		"source" : "/home/lenovo/ultramotive_ws/src/cobot_trial2_description"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
