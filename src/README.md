@@ -84,3 +84,5 @@ ros2 control list_controllers
 
 ## phase 5: Object detection
 
+# Demo video: Robotic arm controlled via Forward_kinamatics and Inverse_kinamatics 
+https://github.com/user-attachments/assets/e4460ffe-7e6f-4b52-b301-fea9ec5767a3
