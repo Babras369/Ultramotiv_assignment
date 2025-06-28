@@ -1,7 +1,0 @@
-# Default initial positions for cobot_trial2's ros2_control fake system
-
-base_revolve: 0
-link1_revolve: 0
-link2_revolve: 0
-link3_revolve: 0
-link4_revolve: 0
