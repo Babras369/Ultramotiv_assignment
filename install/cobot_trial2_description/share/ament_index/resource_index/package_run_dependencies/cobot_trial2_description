@@ -1,1 +1,1 @@
-/home/lenovo/ultramotive_ws/build/cobot_trial2_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cobot_trial2_description
+xacro;rclpy;rviz2;rclcpp;tf2_ros;tf2_kdl;kdl_parser;robot_state_publisher;joint_state_publisher;joint_state_publisher_gui;controller_manager;hardware_interface;ros2_control;ros2_controllers;trajectory_msgs;sensor_msgs;cv_bridge;opencv2;launch;launch_ros;python3-opencv;python3-numpy;ament_copyright;ament_flake8;ament_pep257;python3-pytest;ament_lint_auto;ament_lint_common

@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c01cc5e946afe197dda0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cobot_trial2_description",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_cobot_trial2_description_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_cobot_trial2_description_egg-7313457a0da96d1e3dc4.json",
+					"name" : "ament_cmake_python_build_cobot_trial2_description_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cobot_trial2_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cobot_trial2_description-2c54f13fb1adc26f1c81.json",
+					"name" : "ament_cmake_python_copy_cobot_trial2_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cobot_trial2_description_setup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cobot_trial2_description_setup-6278d38749f9e04e88d7.json",
+					"name" : "ament_cmake_python_copy_cobot_trial2_description_setup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cobot_trial2_description_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cobot_trial2_description_uninstall-8362f8ccab466be197d2.json",
+					"name" : "cobot_trial2_description_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fk_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fk_node-88837e83261d596de043.json",
+					"name" : "fk_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ik_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ik_node-520c693fc873605ee0a7.json",
+					"name" : "ik_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8b89a24bf08252c5f059.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lenovo/ultramotive_ws/build/cobot_trial2_description",
+		"source" : "/home/lenovo/ultramotive_ws/src/cobot_trial2_description"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,1 +1,83 @@
-/home/lenovo/ultramotive_ws/src/cobot_trial2_description/urdf/cobot_trial2.srdf
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="cobot_trial2">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="joint_trajectory_controller">
+        <joint name="virtual_joint"/>
+        <joint name="link1_motor_joint"/>
+        <joint name="link1_revolve"/>
+        <joint name="link2_motor_joint"/>
+        <joint name="link2_revolve"/>
+        <joint name="base_motor_joint1"/>
+        <joint name="base_revolve"/>
+        <joint name="link3_motor_joint"/>
+        <joint name="link3_revolve"/>
+        <joint name="link4_motor_joint"/>
+        <joint name="link4_revolve"/>
+    </group>
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="straight" group="joint_trajectory_controller">
+        <joint name="link1_revolve" value="-0.4339"/>
+        <joint name="link2_revolve" value="-0.0868"/>
+        <joint name="base_revolve" value="0.2"/>
+        <joint name="link3_revolve" value="1.4059"/>
+        <joint name="link4_revolve" value="-1.024"/>
+    </group_state>
+    <group_state name="respect" group="joint_trajectory_controller">
+        <joint name="link1_revolve" value="0.3645"/>
+        <joint name="link2_revolve" value="-1.3364"/>
+        <joint name="base_revolve" value="0.1"/>
+        <joint name="link3_revolve" value="0.1"/>
+        <joint name="link4_revolve" value="0.538"/>
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper" parent_link="link5_v1_1" group="joint_trajectory_controller"/>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="base_link" link2="base_motor_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="link1_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link1_v1_1" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link2_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link2_v1_1" reason="Never"/>
+    <disable_collisions link1="base_link" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link1_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link1_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link2_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link2_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link4_v1_1" reason="Never"/>
+    <disable_collisions link1="base_motor_v1_1" link2="link5_v1_1" reason="Never"/>
+    <disable_collisions link1="link1_motor_v1_1" link2="link1_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link1_motor_v1_1" link2="link2_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link1_motor_v1_1" link2="link2_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link1_motor_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link1_v1_1" link2="link2_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link1_v1_1" link2="link2_v1_1" reason="Default"/>
+    <disable_collisions link1="link1_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link1_v1_1" link2="link4_v1_1" reason="Never"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link2_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link3_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link3_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link4_v1_1" reason="Never"/>
+    <disable_collisions link1="link2_motor_v1_1" link2="link5_v1_1" reason="Never"/>
+    <disable_collisions link1="link2_v1_1" link2="link3_v1_1" reason="Default"/>
+    <disable_collisions link1="link3_motor_v1_1" link2="link3_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link3_motor_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link3_motor_v1_1" link2="link4_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link3_motor_v1_1" link2="link5_v1_1" reason="Never"/>
+    <disable_collisions link1="link3_v1_1" link2="link4_motor_v1_1" reason="Never"/>
+    <disable_collisions link1="link3_v1_1" link2="link4_v1_1" reason="Default"/>
+    <disable_collisions link1="link3_v1_1" link2="link5_v1_1" reason="Never"/>
+    <disable_collisions link1="link4_motor_v1_1" link2="link4_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link4_motor_v1_1" link2="link5_v1_1" reason="Adjacent"/>
+    <disable_collisions link1="link4_v1_1" link2="link5_v1_1" reason="Never"/>
+</robot>

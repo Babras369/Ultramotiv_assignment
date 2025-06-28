@@ -4,11 +4,15 @@
   <name>cobot_trial2_description</name>
   <version>0.0.1</version>
   <description>The cobot_trial2_description package</description>
-  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <maintainer email="babrasashutosh23@gmail.com">Ashutosh Babras</maintainer>
   <license>MIT</license>
 
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend> 
+  
   <!-- Dependencies for robot description and visualization -->
   <depend>xacro</depend>
+  <depend>rclpy</depend>
   <depend>rviz2</depend>
   <depend>rclcpp</depend>
   <depend>tf2_ros</depend>
@@ -24,16 +28,23 @@
   <depend>ros2_control</depend>
   <depend>ros2_controllers</depend>
   <depend>trajectory_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv2</depend>
 
   <!-- Optional: If using launch files in Python -->
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>    
+  <exec_depend>python3-numpy</exec_depend>     
 
   <!-- Testing dependencies -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

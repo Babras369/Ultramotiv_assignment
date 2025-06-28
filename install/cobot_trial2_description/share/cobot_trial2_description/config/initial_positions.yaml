@@ -1,1 +1,7 @@
-/home/lenovo/ultramotive_ws/src/cobot_trial2_description/config/initial_positions.yaml
+# Default initial positions for cobot_trial2's ros2_control fake system
+initial_positions:
+  link1_revolve: -0.785
+  link2_revolve: 0.2
+  base_revolve: 0.3
+  link3_revolve: -2.356
+  link4_revolve: 0.1

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/lenovo/ultramotive_ws/build/cobot_trial2_description/fk_node" "/home/lenovo/ultramotive_ws/build/cobot_trial2_description/ik_node" "TARGETS" "fk_node" "ik_node" "DESTINATION" "lib/cobot_trial2_description")

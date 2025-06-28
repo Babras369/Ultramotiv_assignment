@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/lenovo/ultramotive_ws/build/cobot_trial2_description
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/all
 all: CMakeFiles/fk_node.dir/all
 all: CMakeFiles/ik_node.dir/all
 .PHONY : all
@@ -74,6 +75,9 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/cobot_trial2_description_uninstall.dir/clean
+clean: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/clean
+clean: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/clean
+clean: CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/clean
 clean: CMakeFiles/fk_node.dir/clean
 clean: CMakeFiles/ik_node.dir/clean
 .PHONY : clean
@@ -129,6 +133,85 @@ cobot_trial2_description_uninstall: CMakeFiles/cobot_trial2_description_uninstal
 CMakeFiles/cobot_trial2_description_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cobot_trial2_description_uninstall.dir/build.make CMakeFiles/cobot_trial2_description_uninstall.dir/clean
 .PHONY : CMakeFiles/cobot_trial2_description_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir
+
+# All Build rule for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles --progress-num= "Built target ament_cmake_python_copy_cobot_trial2_description"
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/rule
+
+# Convenience name for target.
+ament_cmake_python_copy_cobot_trial2_description: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/rule
+.PHONY : ament_cmake_python_copy_cobot_trial2_description
+
+# clean rule for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir
+
+# All Build rule for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles --progress-num= "Built target ament_cmake_python_copy_cobot_trial2_description_setup"
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/rule
+
+# Convenience name for target.
+ament_cmake_python_copy_cobot_trial2_description_setup: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/rule
+.PHONY : ament_cmake_python_copy_cobot_trial2_description_setup
+
+# clean rule for target.
+CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir
+
+# All Build rule for target.
+CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/all: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/all
+CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/all: CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build.make CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build.make CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles --progress-num= "Built target ament_cmake_python_build_cobot_trial2_description_egg"
+.PHONY : CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/rule
+
+# Convenience name for target.
+ament_cmake_python_build_cobot_trial2_description_egg: CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/rule
+.PHONY : ament_cmake_python_build_cobot_trial2_description_egg
+
+# clean rule for target.
+CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build.make CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fk_node.dir

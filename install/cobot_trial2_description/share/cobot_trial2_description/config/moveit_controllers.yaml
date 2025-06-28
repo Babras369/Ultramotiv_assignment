@@ -1,1 +1,33 @@
-/home/lenovo/ultramotive_ws/src/cobot_trial2_description/config/moveit_controllers.yaml
+# MoveIt controller configuration
+# Trajectory execution parameters (CRITICAL FIX)
+trajectory_execution:
+  # execution_duration_monitoring: false  # Disable strict timing checks
+  allowed_execution_duration_scaling: 3.0  # More flexible execution timing
+  allowed_goal_duration_margin: 3.0  # Extra time tolerance
+  allowed_start_tolerance: 0.01  # More lenient joint state matching
+  trajectory_duration_monitoring: true
+# Controller timeout settings
+controller_configuration:
+  action_timeout: 10.0  # Increased timeout for action server
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - joint_trajectory_controller
+
+  joint_trajectory_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory  # Updated to match ROS2 control namespace
+    default: true
+    joints:
+      - link1_revolve
+      - link2_revolve
+      - base_revolve
+      - link3_revolve
+      - link4_revolve
+    constraints:
+      goal_time: 5.0
+      stopped_velocity_tolerance: 0.02
+      goal_tolerance: 0.02
+      goal_time_tolerance: 3.0

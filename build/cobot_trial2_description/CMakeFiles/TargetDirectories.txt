@@ -1,5 +1,8 @@
 /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/uninstall.dir
 /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/cobot_trial2_description_uninstall.dir
+/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir
+/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir
+/home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir
 /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/fk_node.dir
 /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/ik_node.dir
 /home/lenovo/ultramotive_ws/build/cobot_trial2_description/CMakeFiles/test.dir

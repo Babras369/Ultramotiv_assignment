@@ -198,6 +198,45 @@ cobot_trial2_description_uninstall/fast:
 .PHONY : cobot_trial2_description_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named ament_cmake_python_copy_cobot_trial2_description
+
+# Build rule for target.
+ament_cmake_python_copy_cobot_trial2_description: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_cobot_trial2_description
+.PHONY : ament_cmake_python_copy_cobot_trial2_description
+
+# fast build rule for target.
+ament_cmake_python_copy_cobot_trial2_description/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description.dir/build
+.PHONY : ament_cmake_python_copy_cobot_trial2_description/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_copy_cobot_trial2_description_setup
+
+# Build rule for target.
+ament_cmake_python_copy_cobot_trial2_description_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_cobot_trial2_description_setup
+.PHONY : ament_cmake_python_copy_cobot_trial2_description_setup
+
+# fast build rule for target.
+ament_cmake_python_copy_cobot_trial2_description_setup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build.make CMakeFiles/ament_cmake_python_copy_cobot_trial2_description_setup.dir/build
+.PHONY : ament_cmake_python_copy_cobot_trial2_description_setup/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_cobot_trial2_description_egg
+
+# Build rule for target.
+ament_cmake_python_build_cobot_trial2_description_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_cobot_trial2_description_egg
+.PHONY : ament_cmake_python_build_cobot_trial2_description_egg
+
+# fast build rule for target.
+ament_cmake_python_build_cobot_trial2_description_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build.make CMakeFiles/ament_cmake_python_build_cobot_trial2_description_egg.dir/build
+.PHONY : ament_cmake_python_build_cobot_trial2_description_egg/fast
+
+#=============================================================================
 # Target rules for targets named fk_node
 
 # Build rule for target.
@@ -284,6 +323,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_cobot_trial2_description_egg"
+	@echo "... ament_cmake_python_copy_cobot_trial2_description"
+	@echo "... ament_cmake_python_copy_cobot_trial2_description_setup"
 	@echo "... cobot_trial2_description_uninstall"
 	@echo "... uninstall"
 	@echo "... fk_node"

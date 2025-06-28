@@ -1,1 +1,59 @@
-/home/lenovo/ultramotive_ws/src/cobot_trial2_description/urdf/cobot_trial2.trans
+<?xml version="1.0" ?>
+<robot name="cobot_trial2" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="base_revolve_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_revolve">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_revolve_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="link4_revolve_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="link4_revolve">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="link4_revolve_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="link3_revolve_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="link3_revolve">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="link3_revolve_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>joint_state_controller_arma_controller
+
+<transmission name="link2_revolve_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="link2_revolve">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="link2_revolve_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="link1_revolve_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="link1_revolve">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="link1_revolve_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

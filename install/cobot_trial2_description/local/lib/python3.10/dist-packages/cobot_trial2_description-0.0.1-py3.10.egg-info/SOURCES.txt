@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+cobot_trial2_description/__init__.py
+cobot_trial2_description.egg-info/PKG-INFO
+cobot_trial2_description.egg-info/SOURCES.txt
+cobot_trial2_description.egg-info/dependency_links.txt
+cobot_trial2_description.egg-info/top_level.txt
