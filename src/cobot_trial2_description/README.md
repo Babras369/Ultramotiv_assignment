@@ -1,6 +1,6 @@
 # ROS2 Cobot Simulation
 
-This repository contains a ROS2 package for collaborative robot (cobot) simulation and kinematics analysis. The package includes Gazebo simulation, RViz visualization, and forward/inverse kinematics implementations.
+This repository contains a ROS2 package for collaborative robot (cobot) simulation and kinematics analysis. The package includes Gazebo simulation, RViz visualization, and forward/inverse kinematics implementations along with object detection.
 
 ## Package Overview
 

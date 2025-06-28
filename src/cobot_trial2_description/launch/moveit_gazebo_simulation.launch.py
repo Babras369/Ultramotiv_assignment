@@ -13,7 +13,7 @@ def generate_launch_description():
 
     # Declare the 'pause' argument and set it to true
     declare_pause_arg = DeclareLaunchArgument(
-        name='pause', default_value='true',
+        name='pause', default_value='false',
         description='Start Gazebo paused'
     )
 

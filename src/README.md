@@ -39,3 +39,48 @@ Gazebo depth camera plugin, OpenCV, YOLOv5/YOLOv8 or any pretrained model
 ---
 **NOTE**
     This package will give you a breif understanding of how robotic arm is simulated in gazebo and can be controlled 
+
+
+# 🌟 My Implementation Methodology 🌟
+
+## Phase 1: Robot Model Development and Integration
+
+Create robotic arm model in Fusion 360. Make sure the joints have limits and links are properly named. Then use urdf2ros2 converter to create your ROS 2 compatible package.
+- This package will help you convert fusion model to urdf [fusion2urdf-ros2](https://github.com/dheena2k2/fusion2urdf-ros2.git).
+ **OR** 
+ Download the package of robotic arm from GitHub. Again it has to be compatible with ROS 2 Humble branch.
+
+## Phase 2: MoveIt 2 Configuration and Setup
+
+Install MoveIt 2 for ROS 2 Humble
+Add all required dependencies listed in the README document
+Optional plugins that might help:
+```
+sudo apt install ros-humble-moveit-common ros-humble-moveit-ros-planning-interface ros-humble-moveit-visual-tools
+```
+
+Run below command to start the setup assistant:
+```
+ros2 launch moveit_setup_assistant setup_assistant.launch.py
+```
+Once open, fill the required info and get the package in same directory as your current package
+
+## Phase 3: Controller Configuration and Integration
+
+Configure important files ros2_controllers.yaml and moveit_controllers.yaml.
+These two files will help Gazebo understand the joints and controllers, and RViz MoveIt planner to send appropriate commands
+Verify controller status using:
+```
+ros2 control list_controllers
+```
+## Phase 4: System Integration and Communication Pipeline
+
+- The overall pipeline works like below:
+
+    You move the robot in RViz and press execute, the motion planner like OMPL will plan the robot joints and send the command to appropriate controller (check the controller name and state to make sure it's active)
+    Once the commands are received by the controller it will move the robot in Gazebo. Here the hardware plugins that are mentioned in the gazebo.xacro file will be responsible to view robot model in RViz, and joint_state_broadcaster will be responsible to tell the RViz current robot state through robot_state_publisher.
+    Once the robot moves to its final position in Gazebo and RViz it will show log message in terminal as completed.
+    **And voilà, you have successfully simulated the robotic arm using Gazebo and RViz.**
+
+## phase 5: Object detection
+

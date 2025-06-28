@@ -1,0 +1,448 @@
+[0.000000] (-) TimerEvent: {}
+[0.001232] (cobot_trial2_description) JobQueued: {'identifier': 'cobot_trial2_description', 'dependencies': OrderedDict()}
+[0.001317] (cobot2_new) JobQueued: {'identifier': 'cobot2_new', 'dependencies': OrderedDict([('cobot_trial2_description', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description')])}
+[0.001373] (cobot_trial2_description) JobStarted: {'identifier': 'cobot_trial2_description'}
+[0.014248] (cobot_trial2_description) JobProgress: {'identifier': 'cobot_trial2_description', 'progress': 'cmake'}
+[0.015284] (cobot_trial2_description) Command: {'cmd': ['/usr/bin/cmake', '/home/lenovo/ultramotive_ws/src/cobot_trial2_description', '-DCMAKE_INSTALL_PREFIX=/home/lenovo/ultramotive_ws/install/cobot_trial2_description'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot_trial2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot_trial2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[0.099625] (-) TimerEvent: {}
+[0.114845] (cobot_trial2_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199798] (-) TimerEvent: {}
+[0.228344] (cobot_trial2_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.241208] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299999] (-) TimerEvent: {}
+[0.372443] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.391728] (cobot_trial2_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.392349] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.393293] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.400312] (-) TimerEvent: {}
+[0.400961] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500497] (-) TimerEvent: {}
+[0.558569] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.578452] (cobot_trial2_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.579117] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.580271] (cobot_trial2_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.587980] (cobot_trial2_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600640] (-) TimerEvent: {}
+[0.701061] (-) TimerEvent: {}
+[0.801620] (-) TimerEvent: {}
+[0.847691] (cobot_trial2_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901829] (-) TimerEvent: {}
+[1.002473] (-) TimerEvent: {}
+[1.031699] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.102697] (-) TimerEvent: {}
+[1.109457] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.120497] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.135559] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.156366] (cobot_trial2_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.183830] (cobot_trial2_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.202854] (-) TimerEvent: {}
+[1.257876] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.264456] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.303082] (-) TimerEvent: {}
+[1.403641] (-) TimerEvent: {}
+[1.473128] (cobot_trial2_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.504024] (-) TimerEvent: {}
+[1.523382] (cobot_trial2_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.600631] (cobot_trial2_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.604163] (-) TimerEvent: {}
+[1.624341] (cobot_trial2_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.704401] (-) TimerEvent: {}
+[1.775337] (cobot_trial2_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.775738] (cobot_trial2_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.804581] (-) TimerEvent: {}
+[1.905410] (-) TimerEvent: {}
+[1.906002] (cobot_trial2_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.908721] (cobot_trial2_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.005616] (cobot_trial2_description) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.005899] (-) TimerEvent: {}
+[2.008531] (cobot_trial2_description) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[2.075402] (cobot_trial2_description) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.101589] (cobot_trial2_description) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[2.105950] (-) TimerEvent: {}
+[2.206202] (-) TimerEvent: {}
+[2.252283] (cobot_trial2_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.306370] (-) TimerEvent: {}
+[2.406789] (-) TimerEvent: {}
+[2.466498] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.471798] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.472174] (cobot_trial2_description) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.472352] (cobot_trial2_description) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.476936] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.477163] (cobot_trial2_description) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.478037] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.479921] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.481055] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.485871] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.486118] (cobot_trial2_description) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.486941] (cobot_trial2_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.489193] (cobot_trial2_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.507115] (-) TimerEvent: {}
+[2.512763] (cobot_trial2_description) StdoutLine: {'line': b'-- Generating done\n'}
+[2.521756] (cobot_trial2_description) StdoutLine: {'line': b'-- Build files have been written to: /home/lenovo/ultramotive_ws/build/cobot_trial2_description\n'}
+[2.535729] (cobot_trial2_description) CommandEnded: {'returncode': 0}
+[2.536631] (cobot_trial2_description) JobProgress: {'identifier': 'cobot_trial2_description', 'progress': 'build'}
+[2.537747] (cobot_trial2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lenovo/ultramotive_ws/build/cobot_trial2_description', '--', '-j12', '-l12'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot_trial2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot_trial2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[2.607266] (-) TimerEvent: {}
+[2.618737] (cobot_trial2_description) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/fk_node.dir/src/fk_node.cpp.o\x1b[0m\n'}
+[2.619034] (cobot_trial2_description) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ik_node.dir/src/ik_node.cpp.o\x1b[0m\n'}
+[2.638773] (cobot_trial2_description) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_cobot_trial2_description_setup\n'}
+[2.639948] (cobot_trial2_description) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_cobot_trial2_description\n'}
+[2.707422] (-) TimerEvent: {}
+[2.807820] (-) TimerEvent: {}
+[2.908200] (-) TimerEvent: {}
+[2.992368] (cobot_trial2_description) StdoutLine: {'line': b'running egg_info\n'}
+[2.993102] (cobot_trial2_description) StdoutLine: {'line': b'creating cobot_trial2_description.egg-info\n'}
+[2.993437] (cobot_trial2_description) StdoutLine: {'line': b'writing cobot_trial2_description.egg-info/PKG-INFO\n'}
+[2.993683] (cobot_trial2_description) StdoutLine: {'line': b'writing dependency_links to cobot_trial2_description.egg-info/dependency_links.txt\n'}
+[2.993935] (cobot_trial2_description) StdoutLine: {'line': b'writing top-level names to cobot_trial2_description.egg-info/top_level.txt\n'}
+[2.994178] (cobot_trial2_description) StdoutLine: {'line': b"writing manifest file 'cobot_trial2_description.egg-info/SOURCES.txt'\n"}
+[2.996787] (cobot_trial2_description) StdoutLine: {'line': b"reading manifest file 'cobot_trial2_description.egg-info/SOURCES.txt'\n"}
+[2.997524] (cobot_trial2_description) StdoutLine: {'line': b"writing manifest file 'cobot_trial2_description.egg-info/SOURCES.txt'\n"}
+[3.008369] (-) TimerEvent: {}
+[3.048630] (cobot_trial2_description) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_cobot_trial2_description_egg\n'}
+[3.108677] (-) TimerEvent: {}
+[3.209266] (-) TimerEvent: {}
+[3.309872] (-) TimerEvent: {}
+[3.410702] (-) TimerEvent: {}
+[3.511135] (-) TimerEvent: {}
+[3.611497] (-) TimerEvent: {}
+[3.711871] (-) TimerEvent: {}
+[3.812497] (-) TimerEvent: {}
+[3.913111] (-) TimerEvent: {}
+[4.013718] (-) TimerEvent: {}
+[4.114348] (-) TimerEvent: {}
+[4.214966] (-) TimerEvent: {}
+[4.315412] (-) TimerEvent: {}
+[4.416018] (-) TimerEvent: {}
+[4.516671] (-) TimerEvent: {}
+[4.617386] (-) TimerEvent: {}
+[4.717812] (-) TimerEvent: {}
+[4.818457] (-) TimerEvent: {}
+[4.919065] (-) TimerEvent: {}
+[5.019674] (-) TimerEvent: {}
+[5.120313] (-) TimerEvent: {}
+[5.221040] (-) TimerEvent: {}
+[5.321678] (-) TimerEvent: {}
+[5.422431] (-) TimerEvent: {}
+[5.522885] (-) TimerEvent: {}
+[5.623545] (-) TimerEvent: {}
+[5.724055] (-) TimerEvent: {}
+[5.824499] (-) TimerEvent: {}
+[5.924963] (-) TimerEvent: {}
+[6.025582] (-) TimerEvent: {}
+[6.126184] (-) TimerEvent: {}
+[6.226772] (-) TimerEvent: {}
+[6.327399] (-) TimerEvent: {}
+[6.427831] (-) TimerEvent: {}
+[6.528555] (-) TimerEvent: {}
+[6.629016] (-) TimerEvent: {}
+[6.729621] (-) TimerEvent: {}
+[6.830112] (-) TimerEvent: {}
+[6.930555] (-) TimerEvent: {}
+[7.031005] (-) TimerEvent: {}
+[7.131445] (-) TimerEvent: {}
+[7.232044] (-) TimerEvent: {}
+[7.332655] (-) TimerEvent: {}
+[7.433306] (-) TimerEvent: {}
+[7.533944] (-) TimerEvent: {}
+[7.634542] (-) TimerEvent: {}
+[7.735147] (-) TimerEvent: {}
+[7.835584] (-) TimerEvent: {}
+[7.936026] (-) TimerEvent: {}
+[8.036469] (-) TimerEvent: {}
+[8.136947] (-) TimerEvent: {}
+[8.237396] (-) TimerEvent: {}
+[8.338057] (-) TimerEvent: {}
+[8.438676] (-) TimerEvent: {}
+[8.539144] (-) TimerEvent: {}
+[8.639687] (-) TimerEvent: {}
+[8.740192] (-) TimerEvent: {}
+[8.840787] (-) TimerEvent: {}
+[8.941411] (-) TimerEvent: {}
+[9.042021] (-) TimerEvent: {}
+[9.142484] (-) TimerEvent: {}
+[9.242952] (-) TimerEvent: {}
+[9.343372] (-) TimerEvent: {}
+[9.443759] (-) TimerEvent: {}
+[9.544394] (-) TimerEvent: {}
+[9.644997] (-) TimerEvent: {}
+[9.715230] (cobot_trial2_description) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable fk_node\x1b[0m\n'}
+[9.745182] (-) TimerEvent: {}
+[9.845641] (-) TimerEvent: {}
+[9.946266] (-) TimerEvent: {}
+[9.998543] (cobot_trial2_description) StdoutLine: {'line': b'[ 75%] Built target fk_node\n'}
+[10.046445] (-) TimerEvent: {}
+[10.146868] (-) TimerEvent: {}
+[10.247299] (-) TimerEvent: {}
+[10.347948] (-) TimerEvent: {}
+[10.448338] (-) TimerEvent: {}
+[10.548718] (-) TimerEvent: {}
+[10.649130] (-) TimerEvent: {}
+[10.749525] (-) TimerEvent: {}
+[10.849948] (-) TimerEvent: {}
+[10.950359] (-) TimerEvent: {}
+[11.050709] (-) TimerEvent: {}
+[11.151079] (-) TimerEvent: {}
+[11.251401] (-) TimerEvent: {}
+[11.351752] (-) TimerEvent: {}
+[11.452157] (-) TimerEvent: {}
+[11.552537] (-) TimerEvent: {}
+[11.652958] (-) TimerEvent: {}
+[11.753355] (-) TimerEvent: {}
+[11.853751] (-) TimerEvent: {}
+[11.954177] (-) TimerEvent: {}
+[12.054565] (-) TimerEvent: {}
+[12.154981] (-) TimerEvent: {}
+[12.255383] (-) TimerEvent: {}
+[12.355782] (-) TimerEvent: {}
+[12.456211] (-) TimerEvent: {}
+[12.556641] (-) TimerEvent: {}
+[12.657017] (-) TimerEvent: {}
+[12.757398] (-) TimerEvent: {}
+[12.857795] (-) TimerEvent: {}
+[12.958206] (-) TimerEvent: {}
+[13.058601] (-) TimerEvent: {}
+[13.159001] (-) TimerEvent: {}
+[13.259399] (-) TimerEvent: {}
+[13.359804] (-) TimerEvent: {}
+[13.460210] (-) TimerEvent: {}
+[13.560618] (-) TimerEvent: {}
+[13.660988] (-) TimerEvent: {}
+[13.761373] (-) TimerEvent: {}
+[13.861767] (-) TimerEvent: {}
+[13.962179] (-) TimerEvent: {}
+[14.062571] (-) TimerEvent: {}
+[14.162998] (-) TimerEvent: {}
+[14.263391] (-) TimerEvent: {}
+[14.363786] (-) TimerEvent: {}
+[14.464217] (-) TimerEvent: {}
+[14.564588] (-) TimerEvent: {}
+[14.664958] (-) TimerEvent: {}
+[14.765313] (-) TimerEvent: {}
+[14.865686] (-) TimerEvent: {}
+[14.966039] (-) TimerEvent: {}
+[15.066432] (-) TimerEvent: {}
+[15.166821] (-) TimerEvent: {}
+[15.267255] (-) TimerEvent: {}
+[15.367673] (-) TimerEvent: {}
+[15.468049] (-) TimerEvent: {}
+[15.568453] (-) TimerEvent: {}
+[15.668873] (-) TimerEvent: {}
+[15.769320] (-) TimerEvent: {}
+[15.869749] (-) TimerEvent: {}
+[15.970190] (-) TimerEvent: {}
+[16.070604] (-) TimerEvent: {}
+[16.171019] (-) TimerEvent: {}
+[16.271462] (-) TimerEvent: {}
+[16.371890] (-) TimerEvent: {}
+[16.472333] (-) TimerEvent: {}
+[16.572750] (-) TimerEvent: {}
+[16.673186] (-) TimerEvent: {}
+[16.773606] (-) TimerEvent: {}
+[16.874036] (-) TimerEvent: {}
+[16.974465] (-) TimerEvent: {}
+[17.074924] (-) TimerEvent: {}
+[17.175359] (-) TimerEvent: {}
+[17.275794] (-) TimerEvent: {}
+[17.376257] (-) TimerEvent: {}
+[17.476691] (-) TimerEvent: {}
+[17.577229] (-) TimerEvent: {}
+[17.677668] (-) TimerEvent: {}
+[17.778124] (-) TimerEvent: {}
+[17.878559] (-) TimerEvent: {}
+[17.978999] (-) TimerEvent: {}
+[18.079434] (-) TimerEvent: {}
+[18.179872] (-) TimerEvent: {}
+[18.280333] (-) TimerEvent: {}
+[18.380788] (-) TimerEvent: {}
+[18.481251] (-) TimerEvent: {}
+[18.581683] (-) TimerEvent: {}
+[18.682141] (-) TimerEvent: {}
+[18.782568] (-) TimerEvent: {}
+[18.883003] (-) TimerEvent: {}
+[18.983460] (-) TimerEvent: {}
+[19.083895] (-) TimerEvent: {}
+[19.184356] (-) TimerEvent: {}
+[19.284787] (-) TimerEvent: {}
+[19.385244] (-) TimerEvent: {}
+[19.485676] (-) TimerEvent: {}
+[19.586134] (-) TimerEvent: {}
+[19.686566] (-) TimerEvent: {}
+[19.787000] (-) TimerEvent: {}
+[19.887431] (-) TimerEvent: {}
+[19.987862] (-) TimerEvent: {}
+[20.088323] (-) TimerEvent: {}
+[20.188747] (-) TimerEvent: {}
+[20.289166] (-) TimerEvent: {}
+[20.389572] (-) TimerEvent: {}
+[20.489993] (-) TimerEvent: {}
+[20.590405] (-) TimerEvent: {}
+[20.690839] (-) TimerEvent: {}
+[20.791300] (-) TimerEvent: {}
+[20.891687] (-) TimerEvent: {}
+[20.992146] (-) TimerEvent: {}
+[21.092511] (-) TimerEvent: {}
+[21.146018] (cobot_trial2_description) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik_node\x1b[0m\n'}
+[21.192690] (-) TimerEvent: {}
+[21.293164] (-) TimerEvent: {}
+[21.393629] (-) TimerEvent: {}
+[21.494027] (-) TimerEvent: {}
+[21.594442] (-) TimerEvent: {}
+[21.694825] (-) TimerEvent: {}
+[21.795239] (-) TimerEvent: {}
+[21.895573] (-) TimerEvent: {}
+[21.995929] (-) TimerEvent: {}
+[22.003083] (cobot_trial2_description) StdoutLine: {'line': b'[100%] Built target ik_node\n'}
+[22.017867] (cobot_trial2_description) CommandEnded: {'returncode': 0}
+[22.018761] (cobot_trial2_description) JobProgress: {'identifier': 'cobot_trial2_description', 'progress': 'install'}
+[22.030388] (cobot_trial2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lenovo/ultramotive_ws/build/cobot_trial2_description'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot_trial2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot_trial2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble')]), 'shell': False}
+[22.041857] (cobot_trial2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.042386] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/pythonpath.sh\n'}
+[22.042852] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/pythonpath.dsv\n'}
+[22.043282] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description-0.0.1-py3.10.egg-info\n'}
+[22.043744] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[22.044126] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[22.044510] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[22.044854] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[22.045253] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description\n'}
+[22.045487] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description/__init__.py\n'}
+[22.081963] (cobot_trial2_description) StdoutLine: {'line': b"Listing '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description'...\n"}
+[22.082245] (cobot_trial2_description) StdoutLine: {'line': b"Compiling '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages/cobot_trial2_description/__init__.py'...\n"}
+[22.086699] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/yolo_object_detection_node.py\n'}
+[22.086964] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/fk_node\n'}
+[22.088242] (cobot_trial2_description) StdoutLine: {'line': b'-- Set runtime path of "/home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/fk_node" to ""\n'}
+[22.088425] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/ik_node\n'}
+[22.096150] (-) TimerEvent: {}
+[22.096525] (cobot_trial2_description) StdoutLine: {'line': b'-- Set runtime path of "/home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/ik_node" to ""\n'}
+[22.096729] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch\n'}
+[22.096861] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/display.launch.py\n'}
+[22.097140] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_rviz.launch.py\n'}
+[22.097270] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo.launch.py\n'}
+[22.097374] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/launch_all.launch.py\n'}
+[22.097478] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo_simulation.launch.py\n'}
+[22.097583] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_gazebo_simulation.launch.py\n'}
+[22.097684] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf\n'}
+[22.097786] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.trans\n'}
+[22.098491] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.xacro\n'}
+[22.098781] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.gazebo\n'}
+[22.099012] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/camera.xacro\n'}
+[22.099316] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/materials.xacro\n'}
+[22.099551] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.srdf\n'}
+[22.099704] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.urdf\n'}
+[22.100078] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes\n'}
+[22.100275] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link4_motor_v1_1.stl\n'}
+[22.105332] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link2_motor_v1_1.stl\n'}
+[22.110359] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link3_v1_1.stl\n'}
+[22.113302] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/base_link.stl\n'}
+[22.114483] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link2_v1_1.stl\n'}
+[22.118266] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link4_v1_1.stl\n'}
+[22.120843] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link1_motor_v1_1.stl\n'}
+[22.125791] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link3_motor_v1_1.stl\n'}
+[22.130297] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/base_motor_v1_1.stl\n'}
+[22.135375] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link1_v1_1.stl\n'}
+[22.138073] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/meshes/link5_v1_1.stl\n'}
+[22.140751] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config\n'}
+[22.141051] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/pilz_cartesian_limits.yaml\n'}
+[22.141224] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/ros2_controllers.yaml\n'}
+[22.141394] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/joint_limits.yaml\n'}
+[22.141493] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/ompl_planning.yaml\n'}
+[22.141688] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/kinematics.yaml\n'}
+[22.142116] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/sensors_3d.yaml\n'}
+[22.142533] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/moveit_controllers.yaml\n'}
+[22.142917] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/display.rviz\n'}
+[22.143316] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/planning_pipeline_config.yaml\n'}
+[22.143625] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/moveit.rviz\n'}
+[22.143834] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/config/initial_positions.yaml\n'}
+[22.144227] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/package_run_dependencies/cobot_trial2_description\n'}
+[22.144446] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/parent_prefix_path/cobot_trial2_description\n'}
+[22.144613] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/ament_prefix_path.sh\n'}
+[22.144771] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/ament_prefix_path.dsv\n'}
+[22.144942] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/path.sh\n'}
+[22.145102] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/environment/path.dsv\n'}
+[22.145257] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.bash\n'}
+[22.145396] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.sh\n'}
+[22.145513] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.zsh\n'}
+[22.145623] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/local_setup.dsv\n'}
+[22.145770] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/package.dsv\n'}
+[22.145935] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/ament_index/resource_index/packages/cobot_trial2_description\n'}
+[22.146092] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/cmake/cobot_trial2_descriptionConfig.cmake\n'}
+[22.146246] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/cmake/cobot_trial2_descriptionConfig-version.cmake\n'}
+[22.146373] (cobot_trial2_description) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/package.xml\n'}
+[22.149016] (cobot_trial2_description) CommandEnded: {'returncode': 0}
+[22.184041] (cobot_trial2_description) JobEnded: {'identifier': 'cobot_trial2_description', 'rc': 0}
+[22.184951] (cobot2_new) JobStarted: {'identifier': 'cobot2_new'}
+[22.196287] (-) TimerEvent: {}
+[22.197959] (cobot2_new) JobProgress: {'identifier': 'cobot2_new', 'progress': 'cmake'}
+[22.198959] (cobot2_new) Command: {'cmd': ['/usr/bin/cmake', '/home/lenovo/ultramotive_ws/src/cobot2_new', '-DCMAKE_INSTALL_PREFIX=/home/lenovo/ultramotive_ws/install/cobot2_new'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot2_new', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot2_new'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/opt/ros/humble')]), 'shell': False}
+[22.256084] (cobot2_new) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[22.296465] (-) TimerEvent: {}
+[22.332962] (cobot2_new) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[22.348833] (cobot2_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[22.396642] (-) TimerEvent: {}
+[22.447648] (cobot2_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[22.454326] (cobot2_new) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[22.454705] (cobot2_new) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[22.454956] (cobot2_new) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[22.457473] (cobot2_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[22.496768] (-) TimerEvent: {}
+[22.548995] (cobot2_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[22.567923] (cobot2_new) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[22.568438] (cobot2_new) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[22.569328] (cobot2_new) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[22.575865] (cobot2_new) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[22.596968] (-) TimerEvent: {}
+[22.697423] (-) TimerEvent: {}
+[22.773044] (cobot2_new) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[22.797590] (-) TimerEvent: {}
+[22.898018] (-) TimerEvent: {}
+[22.956057] (cobot2_new) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.958653] (cobot2_new) StdoutLine: {'line': b'-- Generating done\n'}
+[22.960491] (cobot2_new) StdoutLine: {'line': b'-- Build files have been written to: /home/lenovo/ultramotive_ws/build/cobot2_new\n'}
+[22.965168] (cobot2_new) CommandEnded: {'returncode': 0}
+[22.966435] (cobot2_new) JobProgress: {'identifier': 'cobot2_new', 'progress': 'build'}
+[22.968093] (cobot2_new) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lenovo/ultramotive_ws/build/cobot2_new', '--', '-j12', '-l12'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot2_new', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot2_new'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/opt/ros/humble')]), 'shell': False}
+[22.998424] (-) TimerEvent: {}
+[23.013043] (cobot2_new) CommandEnded: {'returncode': 0}
+[23.014119] (cobot2_new) JobProgress: {'identifier': 'cobot2_new', 'progress': 'install'}
+[23.015855] (cobot2_new) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lenovo/ultramotive_ws/build/cobot2_new'], 'cwd': '/home/lenovo/ultramotive_ws/build/cobot2_new', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'lenovo'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lenovo'), ('OLDPWD', '/home/lenovo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1639'), ('SYSTEMD_EXEC_PID', '1917'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2715'), ('COLCON_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lenovo'), ('JOURNAL_STREAM', '8:3054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lenovo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lenovo-Lenovo-Legion-5-15ARH05:@/tmp/.ICE-unix/1863,unix/lenovo-Lenovo-Legion-5-15ARH05:/tmp/.ICE-unix/1863'), ('INVOCATION_ID', 'cac0376c696e48abbbf94ee82c6b19e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot2_new:/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:6d0cd309-37d1-47aa-af0a-12ede9fddf8a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lenovo/ultramotive_ws/build/cobot2_new'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lenovo/ultramotive_ws/install/cobot_trial2_description:/home/lenovo/ultramotive_ws/install/cobot2_new:/opt/ros/humble')]), 'shell': False}
+[23.024416] (cobot2_new) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.024789] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/ament_index/resource_index/package_run_dependencies/cobot2_new\n'}
+[23.024942] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/ament_index/resource_index/parent_prefix_path/cobot2_new\n'}
+[23.025108] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/environment/ament_prefix_path.sh\n'}
+[23.025281] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/environment/ament_prefix_path.dsv\n'}
+[23.025461] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/environment/path.sh\n'}
+[23.025636] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/environment/path.dsv\n'}
+[23.025780] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/local_setup.bash\n'}
+[23.025955] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/local_setup.sh\n'}
+[23.026151] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/local_setup.zsh\n'}
+[23.026273] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/local_setup.dsv\n'}
+[23.026493] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/package.dsv\n'}
+[23.026609] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/ament_index/resource_index/packages/cobot2_new\n'}
+[23.026809] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/cmake/cobot2_newConfig.cmake\n'}
+[23.026962] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/cmake/cobot2_newConfig-version.cmake\n'}
+[23.027168] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/package.xml\n'}
+[23.027313] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch\n'}
+[23.027436] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/setup_assistant.launch.py\n'}
+[23.027576] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/rsp.launch.py\n'}
+[23.027699] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/moveit_rviz.launch.py\n'}
+[23.027865] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/static_virtual_joint_tfs.launch.py\n'}
+[23.028039] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/move_group.launch.py\n'}
+[23.028172] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/spawn_controllers.launch.py\n'}
+[23.028289] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/warehouse_db.launch.py\n'}
+[23.028409] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/launch/demo.launch.py\n'}
+[23.028575] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config\n'}
+[23.028704] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/pilz_cartesian_limits.yaml\n'}
+[23.028829] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/ros2_controllers.yaml\n'}
+[23.029003] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/joint_limits.yaml\n'}
+[23.029125] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/cobot_trial2.ros2_control.xacro\n'}
+[23.029245] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/kinematics.yaml\n'}
+[23.029367] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/cobot_trial2.urdf.xacro\n'}
+[23.029522] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/sensors_3d.yaml\n'}
+[23.029641] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/moveit_controllers.yaml\n'}
+[23.029763] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/moveit.rviz\n'}
+[23.029919] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/cobot_trial2.srdf\n'}
+[23.030126] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/config/initial_positions.yaml\n'}
+[23.030255] (cobot2_new) StdoutLine: {'line': b'-- Installing: /home/lenovo/ultramotive_ws/install/cobot2_new/share/cobot2_new/.setup_assistant\n'}
+[23.031964] (cobot2_new) CommandEnded: {'returncode': 0}
+[23.044011] (cobot2_new) JobEnded: {'identifier': 'cobot2_new', 'rc': 0}
+[23.045013] (-) EventReactorShutdown: {}

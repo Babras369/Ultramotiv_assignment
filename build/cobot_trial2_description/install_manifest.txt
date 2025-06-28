@@ -10,8 +10,6 @@
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/lib/cobot_trial2_description/ik_node
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/display.launch.py
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_rviz.launch.py
-/home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo.launch.py
-/home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/launch_all.launch.py
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/gazebo_simulation.launch.py
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/launch/moveit_gazebo_simulation.launch.py
 /home/lenovo/ultramotive_ws/install/cobot_trial2_description/share/cobot_trial2_description/urdf/cobot_trial2.trans

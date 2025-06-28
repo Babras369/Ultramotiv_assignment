@@ -48,7 +48,7 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/lenovo/ultramotive_ws/build/cobot_trial2_description
-[ 25%] [32mBuilding CXX object CMakeFiles/fk_node.dir/src/fk_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/fk_node.dir/src/fk_node.cpp.o[0m
 [ 50%] [32mBuilding CXX object CMakeFiles/ik_node.dir/src/ik_node.cpp.o[0m
 [ 50%] Built target ament_cmake_python_copy_cobot_trial2_description_setup
 [ 50%] Built target ament_cmake_python_copy_cobot_trial2_description
