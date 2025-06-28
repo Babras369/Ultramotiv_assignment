@@ -87,5 +87,5 @@ ros2 control list_controllers
 # Demo video: Robotic arm controlled via Forward_kinamatics and Inverse_kinamatics 
 https://github.com/user-attachments/assets/e4460ffe-7e6f-4b52-b301-fea9ec5767a3
 
-# Demo video: Object detection fro 3 different objects
+# Demo video: Object detection for 3 different objects
 https://github.com/user-attachments/assets/ec136a25-3e4d-4b66-906c-1a60cae641ee
