@@ -47,8 +47,8 @@ Gazebo depth camera plugin, OpenCV, YOLOv5/YOLOv8 or any pretrained model
 
 Create robotic arm model in Fusion 360. Make sure the joints have limits and links are properly named. Then use urdf2ros2 converter to create your ROS 2 compatible package.
 - This package will help you convert fusion model to urdf [fusion2urdf-ros2](https://github.com/dheena2k2/fusion2urdf-ros2.git).
- **OR** 
- Download the package of robotic arm from GitHub. Again it has to be compatible with ROS 2 Humble branch.
+- **OR** 
+- Download the package of robotic arm from GitHub. Again it has to be compatible with ROS 2 Humble branch.
 
 ## Phase 2: MoveIt 2 Configuration and Setup
 
@@ -83,6 +83,54 @@ ros2 control list_controllers
     **And voilà, you have successfully simulated the robotic arm using Gazebo and RViz.**
 
 ## phase 5: Object detection
+- ### YOLOv8 Object Detection Training with Roboflow 
+ - Hardware Requirements
+
+   - GPU: NVIDIA GPU with CUDA support (recommended: RTX 3060 or higher)
+   - RAM: Minimum 8GB, recommended 16GB+
+   - Storage: At least 10GB free space for datasets and models
+
+ - Software Requirements
+
+   - Python3/ Python3.10(Stable)
+   - CUDA 11.8+ and cuDNN (for GPU acceleration)
+   - Git
+
+ - Install Required Packages
+   ```
+   - pip install ultralytics
+   - pip install roboflow 
+   ```
+ - Create New Project
+
+   - Choose "Object Detection"
+   - Set project name and description
+   - Upload Images
+
+ - Annotation Process
+
+    - Manual Annotation
+    - Use Roboflow's annotation tool
+    - Draw bounding boxes around objects
+    - Label each object with appropriate class name
+    - Auto-Annotation (Optional)
+
+ - Dataset Augmentation
+
+    - Rotation: ±15 degrees
+    - Brightness: ±25%
+    - Exposure: ±25%
+    - Blur: Up to 2.5px
+    - Noise: Up to 5% of pixels
+    - Flip: Horizontal only (if applicable)
+
+ - Generate Dataset Version
+
+    - Configure train/validation/test split (70/15/15)
+    - Apply preprocessing and augmentation
+    - Generate dataset version
+    - Download in YOLOv8 format
+                    
 
 # Demo video: Robotic arm controlled via Forward_kinamatics and Inverse_kinamatics 
 https://github.com/user-attachments/assets/e4460ffe-7e6f-4b52-b301-fea9ec5767a3
