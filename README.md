@@ -139,3 +139,6 @@ https://github.com/user-attachments/assets/e4460ffe-7e6f-4b52-b301-fea9ec5767a3
 
 # Demo video: Object detection for 3 different objects
 https://github.com/user-attachments/assets/ec136a25-3e4d-4b66-906c-1a60cae641ee
+
+# Demo Photo: Object detection using depth camera
+![Image](https://github.com/user-attachments/assets/3686a4df-cfb7-49f6-be22-8ed0743c2ff4)
