@@ -131,6 +131,8 @@ ros2 control list_controllers
     - Generate dataset version
     - Download in YOLOv8 format
                     
+# For training the data set follow below file instructions:
+ - yolov8.ipynb : ( /home/lenovo/ultramotive_ws/src/cobot_trial2_description/yolov8.ipynb )
 
 # Demo video: Robotic arm controlled via Forward_kinamatics and Inverse_kinamatics 
 https://github.com/user-attachments/assets/e4460ffe-7e6f-4b52-b301-fea9ec5767a3

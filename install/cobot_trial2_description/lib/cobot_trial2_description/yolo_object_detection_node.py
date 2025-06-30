@@ -49,7 +49,7 @@ class YOLOObjectDetectionNode(Node):
             10
         )
         
-        # Optional: Publisher for annotated images
+        # Publisher for annotated images
         self.annotated_image_pub = self.create_publisher(
             Image,
             '/camera/annotated_image',
